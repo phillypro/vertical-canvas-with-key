@@ -2,7 +2,10 @@
 
 update stream key with websocket vendor request
 
-update_stream_key = {
+
+
+def send_stream_key(key):
+    update_stream_key = {
         "op": 6,
         "d": {
             "requestType": "CallVendorRequest",
