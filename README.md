@@ -4,7 +4,7 @@ update stream key with websocket vendor request
 
 
 
-def send_stream_key(key):
+
     update_stream_key = {
         "op": 6,
         "d": {
@@ -13,7 +13,7 @@ def send_stream_key(key):
             "requestData": {
                 "vendorName": "aitum-vertical-canvas",
                 "requestType": "update_stream_key",
-                "requestData":  {"stream_key": key, },
+                "requestData":  {"stream_key": "examplekey12345678", },
             },
         },
     }
